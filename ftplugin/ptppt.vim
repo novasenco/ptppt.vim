@@ -11,8 +11,8 @@ setl conceallevel=2
 setl concealcursor=n
 
 if !(get(g:, 'no_plugin_maps') || get(g:, 'no_ptppt_maps'))
-  nnoremap <buffer> <nowait> <leader>e :call ptppt#maps#disable()<cr>
-  nnoremap <buffer> <nowait> <leader>d :call ptppt#maps#enable()<cr>
+  nnoremap <buffer> <nowait> <leader>e :call ptppt#maps#enable()<cr>
+  nnoremap <buffer> <nowait> <leader>d :call ptppt#maps#disable()<cr>
   nnoremap <buffer> <nowait> <leader>t :call ptppt#maps#toggle()<cr>
 endif
 

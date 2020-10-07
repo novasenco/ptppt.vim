@@ -1,5 +1,5 @@
 
-function! ptppt#maps#disable()
+function! ptppt#maps#enable()
   let cpos = getcurpos()
   let line = getline('.')
   let type = substitute(line, '^\s*\(\[ \]\|\[x\]\|+\|\).*', '\1', '')
@@ -9,7 +9,7 @@ function! ptppt#maps#disable()
   call setpos('.', cpos)
 endfunction
 
-function! ptppt#maps#enable()
+function! ptppt#maps#disable()
   let cpos = getcurpos()
   let line = getline('.')
   let type = substitute(line, '^\s*\(\[ \]\|\[x\]\|+\|\).*', '\1', '')
